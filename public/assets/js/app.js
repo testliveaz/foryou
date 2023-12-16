@@ -2041,12 +2041,12 @@ connection.on('social', (data) => {
         // Eğer çaldıysa, bir ses çalmayı engelliyoruz
         return;
     }
-    if (data.displayType === "pm_mt_guidance_share") {
+    // if (data.displayType === "pm_mt_guidance_share") {
 
-        playSpecificSound(33);
-        // Bu ses çalmanın zamanını kaydediyoruz
-        sonSesCalmaZamani1[member] = simdi1;
-    }
+    //     playSpecificSound(33);
+    //     // Bu ses çalmanın zamanını kaydediyoruz
+    //     sonSesCalmaZamani1[member] = simdi1;
+    // }
 });
 
 
