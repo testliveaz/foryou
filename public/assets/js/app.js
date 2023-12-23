@@ -2195,10 +2195,6 @@ connection.on('social', (data) => {
     // Şimdiki zamanı alıyoruz
     let simdi1 = new Date().getTime();
 
-    if (data.displayType === "pm_main_follow_message_viewer_2") {
-
-        playSpecificSound(22);
-    }
 
     // Kullanıcının son 20 saniye içinde bir ses çalıp çalmadığını kontrol ediyoruz
     if (sonSesCalmaZamani1[member] && (simdi1 - sonSesCalmaZamani1[member] < 20000)) {
