@@ -2314,9 +2314,6 @@ connection.on('like', (data) => {
     let profilePictureUrl = data.profilePictureUrl;
     let totalLikeCount = data.totalLikeCount;
 
-    if (Math.floor(totalLikeCount / 10000) > Math.floor(previousLikeCount / 10000)) {
-        playSpecificSound(23);
-    }
 
     previousLikeCount = totalLikeCount;
 
